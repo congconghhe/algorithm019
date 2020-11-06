@@ -2,7 +2,6 @@ int *plusOne(int *digits, int digitsSize, int *returnSize) {
     for (int i = digitsSize - 1; i >= 0; --i) {
         if (digits[i] == 9) {
             digits[i] = 0;
-           //  *returnSize = digitsSize;  
         } else {
             digits[i]++;
             *returnSize = digitsSize;
